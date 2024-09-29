@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Insert Customer Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="../CustomerDemoURL" method="post">
+            <input type="hidden" name="service" value="insertcustomerdemo">
+            <table>
+                <caption>Insert Customer Demo</caption>
+
+                <tr>
+                    <td><label for="CustomerID">CustomerID</label></td>
+                    <td>
+                        <select name="CustomerID" id="CustomerID">
+                            <option value="1"> a1</option>
+                            <option value="2"> a2</option>
+                            <option value="3"> ALFKI</option>
+                            <option value="4"> ANATR</option>
+                            <option value="5"> ANTON</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="CustomerTypeID">CustomerTypeID</label></td>
+                    <td>
+                        <select name="CustomerTypeID" id="CustomerTypeID">
+                            <option value="1"> abc</option>
+                            <option value="2"> abc1</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <input type="submit" value="insertcustomerdemo" name="submit"></td>
+                    <td><input type="reset" value="reset" name="clean"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

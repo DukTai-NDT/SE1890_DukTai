@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Insert Order</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><form action="../OrderURL" method="post">
+    <input type="hidden" name="service" value="insertOrder">
+    <table>
+        <caption>Insert Order</caption>
+        <tr>
+            <td><label for="OrderID">OrderID</label></td>
+            <td><input type="text" name="OrderID" id="OrderID" readonly></td>
+        </tr>
+        <tr>
+            <td><label for="CustomerID">CustomerID</label></td>
+            <td><select name="CustomerID" id="CustomerID">
+                <option value="a1">a1</option>
+                <option value="a2">a2</option>
+                <option value="a3">a3</option>
+                <option value="a4">a4</option>
+                <option value="ALFKI">ALFKI</option>
+                <option value="ANATR">ANATR</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td><label for="EmployeeID">EmployeeID</label></td>
+            <td><select name="EmployeeID" id="EmployeeID">
+                <option value="1">Davolio</option>
+                <option value="2">Fuller</option>
+                <option value="3">Leverling</option>
+                <option value="4">Peacock</option>
+                <option value="5">Buchanan</option>
+                <option value="6">Suyama</option>
+            </select></td>
+        </tr>
+       <tr>
+            <td><label for="OrderDate">OrderDate</label></td>
+            <td><input type="date" name="OrderDate" id="OrderDate"></td>
+        </tr>
+        <tr>
+            <td><label for="RequiredDate">RequiredDate</label></td>
+            <td><input type="date" name="RequiredDate" id="RequiredDate"></td>
+        </tr>
+        <tr>
+            <td><label for="ShippedDate">ShippedDate</label></td>
+            <td><input type="date" name="ShippedDate" id="ShippedDate"></td>
+        </tr>
+        <tr>
+            <td><label for="ShipVia">ShipVia</label></td>
+            <td><input type="number" name="ShipVia" id="ShipVia"></td>
+        </tr>
+        <tr>
+            <td><label for="Freight">Freight_Num</label></td>
+            <td><input type="text" name="Freight" id="Freight"></td>
+        </tr>
+        <tr>
+            <td><label for="ShipName">ShipName</label></td>
+            <td><input type="text" name="ShipName" id="ShipName"></td>
+        </tr>
+        <tr>
+            <td><label for="ShipAddress">ShipAddress</label></td>
+            <td><input type="text" name="ShipAddress" id="ShipAddress"></td>
+        </tr>
+        <tr>
+            <td><label for="ShipCity">ShipCity</label></td>
+            <td><input type="text" name="ShipCity" id="ShipCity"></td>
+        </tr>
+        <tr>
+            <td><label for="ShipRegion">ShipRegion</label></td>
+            <td><input type="text" name="ShipRegion" id="ShipRegion"></td>
+        </tr>
+        <tr>
+            <td><label for="ShipPostalCode">ShipPostalCode</label></td>
+            <td><input type="text" name="ShipPostalCode" id="ShipPostalCode"></td>
+        </tr>
+        <tr>
+            <td><label for="ShipCountry">ShipCountry</label></td>
+            <td><input type="text" name="ShipCountry" id="ShipCountry"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="insertOrder" name="submit"></td>
+            <td><input type="reset" value="reset" name="clean"></td>
+        </tr>
+    </table>
+</form></div>
+    </body>
+</html>

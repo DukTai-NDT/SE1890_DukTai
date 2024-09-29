@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Insert Shipper</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="../ShipperURL" method="post">
+    <input type="hidden" name="service" value="insertShipper">
+    <table>
+        <caption>Insert Shipper</caption>
+        <tr>
+            <td><label for="ShipperID">ShipperID</label></td>
+            <td><input type="number" name="ShipperID" id="ShipperID" readonly></td>
+        </tr>
+        <tr>
+            <td><label for="CompanyName">CompanyName</label></td>
+            <td><input type="text" name="CompanyName" id="CompanyName"></td>
+        </tr>
+        <tr>
+            <td><label for="Phone">Phone</label></td>
+            <td><input type="text" name="Phone" id="Phone"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="insertShipper" id="submit"></td>
+            <td><input type="reset" name="reset" value="clean"></td>
+        </tr>
+    </table>
+</form>
+    </body>
+</html>

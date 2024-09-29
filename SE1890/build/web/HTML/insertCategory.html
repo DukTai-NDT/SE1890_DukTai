@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Insert Category</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div> <form action="../CategoryURL" method = "post">
+                <input type="hidden" name="service" value="insertCategory">
+            <table>
+                <caption>Insert Category</caption>
+                <tr>
+                    <td><label for="CategoryName">CategoryName</label></td>
+                    <td><input type="text" name="CategoryName" id="CategoryName"></td>
+                </tr>
+                <tr>
+                    <td><label for="Description">Description</label></td>
+                    <td><input type="text" name="Description" id="Description"></td>
+                </tr>
+                <tr>
+                    <td><label for="Picture">Picture</label></td>
+                    <td><input type="text" name="Picture" id="Picture"></td>
+                </tr>
+                <tr>
+                    <td> <input type="submit" value="insertCategory" name="submit"></td>
+                    <td><input type="reset" value="reset" name="clean"></td>
+                </tr>
+            </table>
+        </form></div>
+    </body>
+</html>

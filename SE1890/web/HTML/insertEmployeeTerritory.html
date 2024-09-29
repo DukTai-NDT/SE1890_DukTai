@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Insert Employee Territory</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <form action="../EmployeeTerritoryURL" method="post">
+    <input type="hidden" name="service" value="insertEmployeeTerritory">
+    <table>
+        <caption>insert Employee Territory</caption>
+        <tr>
+            <td><label for="EmployeeID">EmployeeID</label></td>
+            <td>
+                <select name="EmployeeID" id="EmployeeID">
+                    <option value="1">Nancy</option>
+                    <option value="2">Andrew</option>
+                    <option value="3">Janet</option>
+                    <option value="4">Margaret</option>
+                    <option value="5">Steven</option>
+                    <option value="6">Michael</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="TerritoryID">TerritoryID</label></td>
+            <td>
+                <select name="TerritoryID" id="TerritoryID">
+                    <option value="01581">Westboro</option>
+                    <option value="01730">Bedford </option>
+                    <option value="01833">Georgetow </option>
+                    <option value="9999">Ha Noi </option>
+                    <option value="99999">HaiPhong </option>
+                    <option value="32859">Orlando </option>
+                </select>
+            </td>
+        </tr>
+        
+        <tr>
+            <td> <input type="submit" value="insertEmployeeTerritory" name="submit"></td>
+            <td><input type="reset" value="reset" name="clean"></td>
+        </tr>
+    </table>
+</form>
+    </body>
+</html>
